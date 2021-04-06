@@ -39,6 +39,6 @@ Dependency
   <dependency>
     <groupId>com.github.Flo0</groupId>
     <artifactId>PlayerBlockTracker</artifactId>
-    <version>Tag</version>
+    <version>master-SNAPSHOT</version>
   </dependency>
 ```
