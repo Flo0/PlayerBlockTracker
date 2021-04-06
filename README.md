@@ -6,10 +6,10 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
 
 ## API methods:
 ```java
-  boolean >  PlayerBlockTracker#isTrackedBlock(org.bukkit.Block)
-  void    >  PlayerBlockTracker#track(org.bukkit.Block)
-  void    >  PlayerBlockTracker#unTrack(org.bukkit.Block)
-  void    >  PlayerBlockTracker#moveTrack(org.bukkit.Block, org.bukkit.Block)
+  boolean >  PlayerBlockTracker.isTrackedBlock(org.bukkit.Block)
+  void    >  PlayerBlockTracker.track(org.bukkit.Block)
+  void    >  PlayerBlockTracker.unTrack(org.bukkit.Block)
+  void    >  PlayerBlockTracker.moveTrack(org.bukkit.Block, org.bukkit.Block)
 ```
 
 
