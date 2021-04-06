@@ -28,10 +28,17 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
 
 Repository
 ```xml
-On the way
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
 ```
 
 Dependency
 ```xml
-On the way
+  <dependency>
+    <groupId>com.github.Flo0</groupId>
+    <artifactId>PlayerBlockTracker</artifactId>
+    <version>Tag</version>
+  </dependency>
 ```
