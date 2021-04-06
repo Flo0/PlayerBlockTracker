@@ -13,7 +13,7 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
 ```
 
 
-## Example implementation that prevents breaking of any block that was placed by a player
+## Example implementation
 ```java
   @EventHandler
   public void onBreak(final BlockBreakEvent event) {
