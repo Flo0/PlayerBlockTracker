@@ -1,0 +1,6 @@
+name: PlayerBlockTracker
+version: ${project.version}
+main: com.gestankbratwurst.playerblocktracker.PlayerBlockTracker
+api-version: 1.16
+authors: [Gestankbratwurst]
+description: Plugin to keep track of blocks placed by players
