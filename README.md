@@ -40,6 +40,6 @@ Dependency
   <dependency>
     <groupId>com.github.Flo0</groupId>
     <artifactId>PlayerBlockTracker</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </dependency>
 ```
