@@ -4,7 +4,7 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
 ![BlockTrackingIllustration](https://i.imgur.com/Hf3uCvU.png)
 
 
-##API methods:
+## API methods:
 ```java
   boolean >  PlayerBlockTracker#isTrackedBlock(org.bukkit.Block)
   void    >  PlayerBlockTracker#track(org.bukkit.Block)
@@ -13,7 +13,7 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
 ```
 
 
-##Example implementation that prevents breaking of any block that was placed by a player
+## Example implementation that prevents breaking of any block that was placed by a player
 ```java
   @EventHandler
   public void onBreak(final BlockBreakEvent event) {
@@ -24,7 +24,7 @@ This Spigot plugin provides tracking of blocks placed by any player that is not 
   }
 ```
 
-##Maven dependency
+## Maven dependency
 
 Repository
 ```xml
