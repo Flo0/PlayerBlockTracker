@@ -60,7 +60,7 @@ public class TrackListener implements Listener {
     this.trackingManager.terminateChunk(event.getChunk());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onPlace(final BlockPlaceEvent event) {
     if (event.getPlayer().getGameMode() == GameMode.CREATIVE) {
       return;
@@ -68,57 +68,57 @@ public class TrackListener implements Listener {
     this.trackingManager.track(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onBreak(final BlockBreakEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onExplode(final BlockExplodeEvent event) {
     this.trackingManager.unTrackAll(event.blockList());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onExplode(final EntityExplodeEvent event) {
     this.trackingManager.unTrackAll(event.blockList());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onBurn(final BlockBurnEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onFade(final BlockFadeEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onForm(final BlockFormEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onFlow(final BlockFromToEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onGrow(final BlockGrowEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onMultiPlace(final BlockMultiPlaceEvent event) {
     this.trackingManager.trackAll(event.getReplacedBlockStates().stream().map(BlockState::getBlock).collect(Collectors.toList()));
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onPistonExtend(final BlockPistonExtendEvent event) {
     this.trackingManager.shift(event.getDirection(), event.getBlocks());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onPistonRetract(final BlockPistonRetractEvent event) {
     if (!event.isSticky()) {
       return;
@@ -126,12 +126,12 @@ public class TrackListener implements Listener {
     this.trackingManager.shift(event.getDirection(), event.getBlocks());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onSpread(final BlockSpreadEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
 
-  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
   public void onEntityForm(final EntityBlockFormEvent event) {
     this.trackingManager.unTrack(event.getBlock());
   }
