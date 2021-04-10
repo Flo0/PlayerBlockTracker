@@ -1,7 +1,7 @@
 package com.gestankbratwurst.playerblocktracker;
 
+import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -26,7 +26,7 @@ public class TrackingManager {
   private final Map<UUID, TrackedWorld> trackedWorldMap;
 
   protected TrackingManager() {
-    this.trackedWorldMap = new HashMap<>();
+    this.trackedWorldMap = new Object2ObjectOpenHashMap<>();
   }
 
   protected void initWorld(final World world) {
