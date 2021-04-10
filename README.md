@@ -1,5 +1,5 @@
 # PlayerBlockTracker
-This Spigot plugin provides tracking of blocks placed by any player that is not in creative mode in a performant way.
+This Spigot plugin provides tracking of blocks placed by any player that is not in creative mode in a performant and persistent way.
 
 [![](https://jitpack.io/v/Flo0/PlayerBlockTracker.svg)](https://jitpack.io/#Flo0/PlayerBlockTracker)
 ![BlockTrackingIllustration](https://i.imgur.com/Hf3uCvU.png)
@@ -40,6 +40,6 @@ Dependency
   <dependency>
     <groupId>com.github.Flo0</groupId>
     <artifactId>PlayerBlockTracker</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </dependency>
 ```
